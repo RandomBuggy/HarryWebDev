@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS Tutorial</title>
+        <!-- CSS priority order inline -> internal -> external -->
+        <!-- but between internal and external css takes priority which you wrote/link comparely at last -->
+        <!-- to change above priority level write !important after your chosen property-value pair -->
+        <!-- like this:- p { color : green !important; } that's it -->
+        <!-- internal CSS -->
+        <style>
+p {
+            color : green;
+            background-color : purple;
+}
+        </style>
+
+        <!-- external css -->
+        <link rel="stylesheet" href="tutorial14.css" media="all">
+    </head>
+    <body>
+        <h3>This is CSS Tutorial</h3>
+        <!-- inline css example -->
+        <p style="color : red; background-color : yellow;"> this tutorial will get you every way to implement CSS in HTML markup</p>
+        <p id="myid">for external CSS</p>
+    </body>
+</html>
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Array and Object</title>
+    </head>
+    <body>
+        <div class="container">
+            <p>Just simple HTML</p>
+            <script>
+                // premative type
+                let myVar = 23;
+                let myVar2 = "string";
+                let myVar3 = true;
+                let myVar4 = false;
+                let myVar5 = null;
+                let myVar6 = undefined;
+
+
+                // object reference type
+                // object in JS --> key-value pairs
+                let obj = {
+                    name : "Harry",
+                    salary : 10,
+                    channel : "CodeWithHarry",
+                    channel2 : "ProgrammingWithHarry",
+                    key : "value",
+                    "New Key" : "So string as key, string as value"
+                }
+                console.log(obj);
+                // access object element
+                console.log(obj.key);
+                console.log(obj["key"]);
+                // array - special object
+
+                let arr = [1, 1.5, "Harry", null, undefined, true, false];
+                console.log(arr);
+                // index
+                console.log(arr[0]);
+                console.log(arr[1]);
+                console.log(arr[2]);
+                console.log(arr[3]);
+                console.log(arr[4]);
+                console.log(arr[5]);
+                console.log(arr[6]);
+                // array becomes handy - searching element in DOM(Document Object Module)
+                // array - the object way
+                let arr2 = new Array(1, 1.5, "Harry", null, undefined, true, false);
+                console.log(arr2);
+                console.log(arr2[0]);
+                console.log(arr2[1]);
+                console.log(arr2[2]);
+                console.log(arr2[3]);
+                console.log(arr2[4]);
+                console.log(arr2[5]);
+                console.log(arr2[6]);
+
+                console.log("length : " + arr2.length);
+                arr2 = arr2.sort();
+                console.log("Sorted : " + arr2);
+                arr2.push("pushed string");
+                console.log(arr2); 
+                console.log("Empty array");
+                let a = new Array(23);
+                console.log(a);
+                console.log(a[5]);
+            </script>
+        </div>
+    </body>
+</html>
+

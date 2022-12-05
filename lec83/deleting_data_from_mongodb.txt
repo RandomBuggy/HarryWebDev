@@ -1,0 +1,14 @@
+show dbs
+
+use harryCart
+
+db.items.find({rating: 20000})
+
+/* deleting documents from mongodb:- db.items.deleteOne(BSON object)/ db.items.deleteMany(BSON array) */
+
+// deleteOne query - delete only tye first occurance from match
+
+db.items.deleteOne({rating: {$gt: 4.5}})
+
+// deleteMany query - delete all occurance from match
+db.items.deleteMany({rating: {$gt: 4.5}})

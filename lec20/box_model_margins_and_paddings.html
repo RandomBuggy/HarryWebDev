@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Box Model, Margin and Padding</title>
+        <style>
+            /* universal selector is *        bbsjdvhds*/
+            * {
+                box-sizing: border-box;
+                padding : 0;
+                margin : 0;
+            }
+
+            .container {
+                background-color: burlywood;
+                border : 2px solid rgb(64, 6, 119);
+                padding : 50px;
+                /* we can select margin /padding of top bottom left right like this */
+                /*
+                   padding-top : 45px;
+                   padding-left : 20px;
+                   padding-bottom : 12px;
+                   padding-right : 23px;
+                */
+                /* padding/margin = top right bottom right */
+                padding : 12px 15px 12px 15px;
+                /* padding/margin = y(top/bottom) x(left/right) */
+                padding : 30px 18px;
+                margin : 20px;
+                margin : 14px 19px;
+
+                border-radius: 23px;
+                width: 230px;
+                /* to force stop calculating length of an element adding margin and padding length also */
+                box-sizing: border-box;
+            }
+
+            body {
+                background-color: #e6cbf8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Box Model</h3>
+            <p id="first">Elit odit non iste beatae eligendi ipsa Consectetur soluta eum fugiat eligendi provident! Voluptatum ea quam dignissimos assumenda in Tempore delectus reprehenderit</p>
+
+        </div>
+
+
+
+        <div class="container">
+            <h3>Box Model</h3>
+            <p id="first">Elit odit non iste beatae eligendi ipsa Consectetur soluta eum fugiat eligendi provident! Voluptatum ea quam dignissimos assumenda in Tempore delectus reprehenderit</p>
+
+        </div>
+
+
+
+         <div class="container">
+            <h3>Box Model</h3>
+            <p id="first">Elit odit non iste beatae eligendi ipsa Consectetur soluta eum fugiat eligendi provident! Voluptatum ea quam dignissimos assumenda in Tempore delectus reprehenderit</p>
+
+        </div>
+ 
+    </body>
+</html>
+

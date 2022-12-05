@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>#{title}</title>
+        style
+            include ../static/style.css
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1> This is heading </h1>
+            <p>
+                | #{content}
+                | <!-- this is comment -->
+            </p>
+        </div>
+        <form action="/" id="contact" method="post">
+            <input id="name" type="text" name="name" placeholder="Enter Your Name">
+            <input id="age" type="text" name="age" placeholder="Enter Your Age">
+            <input id="gender" type="text" name="gender" placeholder="Enter Your Gender">
+            <textarea id="address" name="address" cols="30" rows="10" placeholder="Enter Your Address Here"></textarea>
+            <textarea id="more" name="more" cols="30" rows="10" placeholder="More about You"></textarea>
+            <button class="btn">Submit</button>
+        </form>
+        | #{message}
+    </body>
+</html>

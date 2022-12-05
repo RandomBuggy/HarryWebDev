@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript | Strings and String Methods</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Elit impedit quibusdam consequuntur</h1>
+            <p>Lorem minus dolor dignissimos voluptatum placeat ullam? Animi ab nisi nisi facere recusandae. Cumque a iste alias cumque vero Numquam earum libero in cum accusamus Consequatur corrupti animi reiciendis officiis ratione delectus provident voluptatibus?</p>
+        </div>
+        <div id="content"></div>
+        <script>
+            var str = "'single quote inside double quote'";
+            var Str = '"double quote inside single quote"';
+            console.log(str);
+            console.log(Str);
+            
+            var name = "Harry";
+            var message = "Harry is a good boy";
+            var channel = "CodeWithHarry";
+            /* template literals - `${variable_name} some string ${variable_name} sorround with back-tick and both single quote and double quote can be used` */
+            var temp = `"double quote" ${name} is a good person and he has a channel named ${channel} 'single quote'`;
+            console.log(name);
+            console.log(message);
+            console.log("With concatenation " + name + message);
+            console.log("Template literals " + temp);
+            var len = name.length;
+            console.log(`length of ${name} is ${len}`);
+
+            /* escape sequence characters */
+            console.log("newline\ntab\tbackspace\b");
+            console.log("string constructors");
+            var y = new String("this");
+            console.log(y);
+            /* dynamic content randering */
+            document.getElementById("content").innerHTML = "<h3>This is a dynamic h3 heading</h3>";
+        </script>
+    </body>
+</html>
+

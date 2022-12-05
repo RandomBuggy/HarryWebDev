@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Scope, If-Else Conditionals and Switch-Case</title>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <div>
+            <ul>
+                <li>Item-1</li>
+                <li>Item-2</li>
+                <li>Item-3</li>
+                <li>Item-4</li>
+                <li>Item-5</li>
+                <li>Item-6</li>
+                <li>Item-7</li>
+            </ul>
+        </div>
+        <script>
+            var string1 = "this is a string";
+            // using var is re-declarable
+            var string1 = "I am redeclaring it";
+            // var - keyword's scope is by default global but inside function scope is local
+            {
+                let a = "block level scope";
+                console.log(a);
+                // let keyword scope is inside this block and does not re-declarable, so block level scope
+                let a = "updated"; // throws error
+            }
+            // no error because outside this block
+            let a = 6;
+            console.log(a);
+            console.log(string1);
+            // constant can not be changed
+            const b = "Constant";
+            b = "t"; // throws error
+            // PRO TIP :- use let keyword to declare variables and use const keyword when no probability to be changed the whole value in the entire programme
+
+
+            // if-else conditionals
+            let age = 18;
+            if (age >= 18) {
+                console.log("You can drink water");
+            }
+            else if (age == 2) {
+                console.log("The if-else ladder");
+            }
+            else if (age == 3) {
+                console.log("many elif block");
+            }
+            else if (age == 7) {
+                console.log("tata");
+            }
+            else {
+                console.log("You can not drink water");
+            }
+
+
+
+            // switch-case statement
+            const c = 45;
+            switch(c) {
+                case 4:
+                    console.log("first value matched");
+                    break;
+                case 45:
+                    console.log("Order 45 cup of tea now");
+                    break;
+                default:
+                    console.log("the default case scenerio");
+                    break;
+            }
+        </script>
+    </body>
+</html>
+

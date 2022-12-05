@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JavaScript | String Functions</title>
+    </head>
+    <body>
+        <script>
+            var str = "This is a string";
+            console.log(str);
+            /* return first occurance of a string */
+            var position = str.indexOf("is");
+            console.log(position);
+            /* return last occurance of a string */
+            position = str.lastIndexOf("is");
+            console.log(position);
+            /* substring from a string */
+            var substr = str.slice(1, 6);
+            console.log(substr);
+            var substr1 = str.substr(1, 7) /* substr(index, length); */
+           console.log(substr1);
+            substr = str.substring(1, 7);
+            console.log(substr);
+            /* replace string */
+            var replaced = str.replace("string", "harry");
+            console.log(str);
+            console.log(replaced);
+            /* case conversion */
+            console.log(str.toUpperCase());
+            console.log(str.toLowerCase());
+            /*concatenate method */
+            console.log(str.concate("New String"));
+            /* trim whitespace from fisrt and from last */
+            var whitesp = "        contains      white  spaces      ";
+            console.log(whitesp);
+            console.log(whitesp.trim());
+            /* extract character */
+            var char2 = str.charAt(2);
+            console.log(char2);
+            console.log(str[2]); /* with index */
+            /* character code -based on encoding like ASCII, UTF-8 etc */
+            console.log(str.charCodeAt(2));
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,3 @@
+mongodb-compass - GUI interface : like mongo-shell
+
+mongoose module -> nodejs connector for mongodb

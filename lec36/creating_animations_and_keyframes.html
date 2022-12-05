@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Animation and Keyframes</title>
+        <style>
+            .container {
+                background-color: greenyellow;
+            }
+            .box {
+                background-color: green;
+                width: 250px;
+                height: 250px;
+                position: relative;
+                animation-name: RandomBuggy;
+                animation-name: RandomBuggy2;
+                animation-duration: 2s;
+                /* animation-iteration-count: infinite; */
+                animation-iteration-count: 5;
+                animation-fill-mode: both;
+                animation-fill-mode: alternate;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+                animation-timing-function: ease-in;
+                animation-timing-function: ease-out;
+                animation-timing-function: ease-in-out;
+                animation-direction: normal;
+               animation-direction: reverse; 
+                animation-delay: 4s;
+                /* short hand property
+                animation: name duration timing-function delay iteration-count fill-mode direction;
+            }
+            @keyframes RandomBuggy {
+                from {
+                    width: 250px;
+                }
+                to {
+                    width: 400px;
+                }
+            }
+            @keyframes RandomBuggy2 {
+                0% {
+                    top: 0px;
+                    left: 0px;
+                }
+                25% {
+                    top: 250px;
+                    left: 0px;
+                }
+                75% {
+                    top: 250px;
+                    left: 250px;
+                }
+                100% {
+                    top: 0px;
+                    left: 250px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <p>This is a box</p>
+            </div>
+        </div>
+    </body>
+</html>
+

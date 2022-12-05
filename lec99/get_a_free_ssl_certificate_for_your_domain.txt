@@ -1,0 +1,5 @@
+SSL certificate - defence MITM attack
+    - use lets-encrypt website (a free and open certificate issue authority) to generate your SSL cryptography file
+    - valid to 90 days then renew, automate this with puthon-certbot-apache/python-certbot-nginx
+
+    - the crontabguru website

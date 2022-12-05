@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Attribute and Nth child pseudo selectors</title>
+        <style>
+            .container {
+                display: block;
+                width: 78px;
+                margin: auto;
+            }
+            input {
+                display: block;
+            }
+            input[type="text"] {
+                border: 2px solid red;
+                padding: 43px;
+            }
+            input[target] {
+                    font-size: 50px;
+                    color: violet;
+            }
+            input[type="email"] {
+                display: block;
+                background-color: cyan;
+            }
+            li:nth-child(3) {
+                color: blue;
+            }
+            li:nth-child(2n+0) {
+                color: red;
+            }
+            li:nth-child(odd) {
+                background-color: green;
+            }
+            li:nth-child(even) {
+                background-color: chocolate;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <a href="http://google.com" target="_blank">Go To GOOGLE</a>
+            <ul>
+                <li id="item1" class="item">Item 1</li>
+                <li id="item2" class="item">Item 2</li>
+                <li id="item3" class="item">Item 3</li>
+                <li id="item4" class="item">Item 4</li>
+                <li id="item5" class="item">Item 5</li>
+            </ul>
+            <form class="form-control" action="#">
+                <input type="text" placeholder="Enter Your Name"/>
+                <input type="password" placeholder="Enter Your Password"/>
+                <input id="#" type="email" placeholder="Enter Your Email"/> 
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
+

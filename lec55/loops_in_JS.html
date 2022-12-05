@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>For, While, For-Each, Do-While etc loop in JS</title>
+    </head>
+    <body>
+    </body>
+    <script>
+        // the for loop
+        for (let i = 0; i <= 3; i++) {
+            console.log(i);
+        }
+        let arrays = ["Harray", "Rohan", "Sanjeet", "Rahul", "Pooja", "SkillF"];
+        // for loop as array iterator
+        for (let i = 0; i < arrays.length; i++) {
+            let element = arrays[i];
+            console.log(element);
+            console.log(`template literal : Hello Friend ${i} : ${arrays[i]}`);
+        }
+        // array iteration For-Each loop
+        arrays.forEach(function iter(element) {console.log(`Hello, ${element}`)});
+        //array iteration For-Of loop
+        for (element of arrays) {
+            console.log(`For-Of loop : Hello, ${element}`);
+        }
+        // object iteration For-In loop
+        let obj = {
+            name : "Harry",
+            salary : 10,
+            Channel : "CodeWithHarry"
+        }
+        for (key in obj) {
+            console.log(`${key} of the employee is ${obj[key]}`);
+        }
+        // while loop
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is less than 4`);
+            i++;
+        }
+        // do-while loop
+        let j = 0;
+        do {
+            console.log("one chance & do-while loop");
+        } while (j > 0);
+    </script>
+</html>
+

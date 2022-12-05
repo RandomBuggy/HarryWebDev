@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>More on Selectors</title>
+        <style>
+            h1 {
+                background-color: red;
+                color: black;
+                font-weight: bold;
+                text-align: center;
+            }
+
+
+            div p {
+                background-color: green;
+                color: yellow;
+                font-weight: bold;
+            }
+            div li p {
+                background-color: blue;
+            }
+
+
+            div > p {
+                background-color: chocolate;
+                color: green;
+                font-weight: bold;
+            }
+
+            /* for symblink */
+
+            div + p {
+                background-color: yellow;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>This is more on selectors</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <p>This is a Paragraph</p>
+                <div>
+                    <ul>
+                        <li class="item"><p>This is another Paragraph insile LI</p></li>
+                        <li class="item">This will not get affected</li>
+                        <li class="item"></li>
+                        <li class="item"></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>This is another Paragraph</p>
+            </div>
+            <p>direct child of div</p>
+        </div>
+
+        <p>This is outermost Paragraph</p>
+    </body>
+</html>
+

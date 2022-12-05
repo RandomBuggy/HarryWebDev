@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Date and Time in JS</title>
+        <style>
+            .container {
+                font-size: 23px;
+                background-color: blanchedalmond;
+                padding: 23px;
+                margin: 4px;
+                text-align: center;
+                border: 2px solid green;
+            }
+            #time {
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            This is a container
+            Time <span id="time"></span>
+        </div>
+        <script>
+            console.log("Tutorial 59");
+            let now = new Date();
+            console.log(now);
+            let start_reference_time = new Date(0);
+            console.log(start_reference_time);
+            let start_reference_time_plus_1_second = new Date(1000);
+            console.log(start_reference_time_plus_1_second);
+
+
+            let date_string = new Date("2029-11-28");
+            console.log(date_string);
+            // let dt = new Date(years, months, date, hours, minutes, seconds, miliseconds);
+            let dt = new Date(3022, 4, 6, 8, 11, 45, 55, 450);
+            console.log(dt);
+
+
+            let yr = dt.getFullYear();
+            console.log(`The year is ${yr}`);
+
+            let datee = dt.getDate();
+            console.log(`The date is ${datee}`);
+
+            let month = dt.getMonth();
+            console.log(`The month is ${month}`);
+
+            let hour = dt.getHours();
+            console.log(`The hour is ${hour}`);
+
+            let minute = dt.getMinutes();
+            console.log(`The minute is ${minute}`);
+            let second = dt.getSeconds();
+            console.log(`The second is ${second}`);
+            let day = dt.getDay();
+            console.log(`The day is ${day}`);
+            dt.setDate(15);
+            console.log(dt);
+            // auto date correction
+            dt.setDate(42);
+            console.log(dt);
+            dt.setMinutes(29);
+            console.log(dt);
+
+            // current time stamp
+            let nowStamp = Date.now();
+            console.log(nowStamp);
+
+            // display time
+            function displayTime() {
+                document.getElementById('time').innerHTML = new Date();
+            }
+            setInterval(displayTime, 1000);
+        </script>
+    </body>
+</html>
+

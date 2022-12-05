@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Math Object</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>This Tutorial is of Math Object</h1>
+        </div>
+        <script>
+            let math = Math;
+            console.log(math);
+            
+            // constant value 
+            console.log("The value of Math.E is ", math.E);
+            console.log("The value of Math.PI is ", math.PI);
+            console.log("The value of Math.LN2 is ", math.LN2);
+            console.log("The value of Math.LN10 is ", math.LN10);
+            console.log("The value of Math.SQRT2 is ", math.SQRT2);
+            console.log("The value of Math.SQRT1_2 is ", math.SQRT1_2);
+            console.log("The value of Math.LOG2E is ", math.LOG2E);
+
+            // functions
+            let a = 34.96546, b = 89;
+            console.log(`Value of a and b is ${a} and ${b}`);
+            console.log(`Value of rounded a and b is ${Math.round(a)} and ${Math.round(b)}`);
+            console.log(`Value of a and b is ${a} and ${b}`);
+            console.log(`Value of a and b is ${a} and ${b}`);
+
+            console.log(`3 raised to the power of 2 is ${Math.pow(3, 2)}`);
+            console.log(`2 raised to the power of 12 is ${Math.pow(2, 12)}`);
+            console.log(`1 raised to the power of 2 is ${Math.pow(1, 2)}`);
+
+
+            console.log(`The square root of 36 is ${Math.sqrt(36)}`);
+            console.log(`The square root of 64 is ${Math.sqrt(64)}`);
+            console.log(`The square root of 50 is ${Math.sqrt(50)}`);
+
+            // ceil and floor
+            console.log(`Ceil : 5.8 rounded up to the nearest integer ${Math.ceil(5.8)}`);
+            console.log(`Floor : 5.8 rounded down to the nearest integer ${Math.floor(5.8)}`);
+            
+            // absolute value
+            console.log(`Absolute Value of 5.66 is ${Math.abs(5.66)}`);
+            console.log(`Absolute Value of -5.66 is ${Math.abs(-5.66)}`);
+
+            // trigonometric functions
+            console.log(`The value of sin(PI/2) is ${Math.sin(Math.PI/2)}`);
+            console.log(`The value of tan(PI/2) is ${Math.tan(Math.PI/2)}`);
+            console.log(`The value of cos(PI/2) is ${Math.cos(Math.PI/2)}`);
+
+            // min and max functions
+            console.log(`The minimum value of 4, 5, 6 is ${Math.min(4, 5 , 6)}`);
+            console.log(`The maximum value of 14, 5, 16 is ${Math.min(14, 5 , 16)}`);
+
+            // generating random number from 0 to 1
+            let rndm = Math.random();
+            console.log(`Generated Random Number is ${rndm}`);
+
+            let p = window.prompt("Enter a", 1);
+            let q = window.prompt("Enter b", 100);
+
+            let r1_100 = (a + (b-a) * Math.random());
+            console.log(`Generated Random Number is ${r1_100}`);
+        </script>
+    </body>
+</html>
+

@@ -1,0 +1,17 @@
+show dbs
+
+show collections
+
+use harryCart
+
+/* update query - db.collection_name.function update one / many ducuments */
+
+// updateOne/updateMany function takes two BSON object -> filter BSON, update BSON
+
+// updateOne query
+
+db.items.updateOne({rating: {$gte: 3.5}}, {$set: {price: 2}})
+
+// updateMany query
+
+db.items.updateMany(name: "Moto 30s"}, {$set: {price: 2, rating: 1.0}})

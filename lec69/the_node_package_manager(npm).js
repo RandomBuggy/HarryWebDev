@@ -1,0 +1,16 @@
+console.log("npm - the Node Package Manager");
+console.log('command - npm init');
+console.log('See the package.json file, package-lock.json file, node_modules directory');
+console.log('Dont delete - package.json file, package-lock.json file');
+console.log('command - npm install <package>');
+console.log('command - npm uninstall <package>');
+console.log('command - npm install [for all package.json dependencies]');
+console.log('command - npm install <package@version>');
+console.log('command - npm install <package@major.minor.patch>');
+console.log('for development environment only');
+console.log('command - npm install <package> --save-dev');
+console.log('for global installation');
+console.log('command - npm install <package> --location=<global|local> [at node version 18.@.@]');
+console.log(`command - nom view <package> version`);
+console.log(`inside package.json file's dependencies key:- ^ - exact version, ~ - accept patch also, > - greater than some version`);
+console.log('some common node package - express, postman, nodemon');

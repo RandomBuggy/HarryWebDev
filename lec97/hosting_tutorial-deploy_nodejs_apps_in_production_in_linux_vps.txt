@@ -1,0 +1,6 @@
+do nodejs install and build-essential and all the dependencies, make ready your nodejs app
+
+install node-package pm2
+    - run in shell, [ ~$ pm2 examples]
+to run pm2 as daemon after each reboot
+    - pm2 start systemd

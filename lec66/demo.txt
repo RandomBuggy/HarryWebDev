@@ -1,0 +1,10 @@
+<html>
+    <head>
+        <title>The Webpage</title>
+    </head>
+    <body>
+        <div>
+            <p>The Response</p>
+        </div>
+    </body>
+</html>

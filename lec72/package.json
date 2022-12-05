@@ -1,0 +1,15 @@
+{
+  "name": "lec72",
+  "version": "1.0.0",
+  "description": "Static Files and Pug temolate engine",
+  "main": "static_files_and_pug_template_engine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}

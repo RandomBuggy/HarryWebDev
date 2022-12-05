@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>iforms and input tag</title>
+    </head>
+    <body>
+        <form action="backend.php">
+            <!-- name attribute attach value with a variable given as string and send this variable-value pair to backend so that backend can identify data coming from a form -->
+            <label for="name"> </label>
+            Name: <input type="text", name="myName", id="name"> </br>
+            Role: <input type="text", name="myRole"> </br>
+            Email: <input type="email", name="myEmail"> </br>
+            Date: <input type="date", name="myDate"> </br>
+            Bonus: <input type="number", name="myNumber"> </br>
+            CheckBox: <input type="checkbox", name="myCheckbox"> </br>
+            RadioButton1: <input type="radio", name="myRadio"> </br>
+            RadioButton2: <input type="radio", name="myRadio"> </br>
+            RadioButton3: <input type="radio", name="myRadio"> </br>
+            Write: <textarea name="myTextarea", cols=30, rows=10> </textarea>
+            <label for="car"> Car </label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf", selected>Swift</option>
+            </select>
+            <input type="reset", name="Reset Now"> </br>
+            <input type="submit", value="Submit Now"> </br>
+        </form>
+    </body>
+</html>
+

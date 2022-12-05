@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Text Shadow and Box Shadow</title>
+        <style>
+            .container {
+                display: flex;
+            }
+            .card {
+                /* border: 2px solid red; */
+                padding: 23px 12px;
+                margin: 23px 12px;
+                background-color: burlywood;
+                box-shadow: 10px 13px green; /* inset x offset y offset blur spread color/rgba(r, g, b, alpha)  to apply different shadow separate with comma*/
+                box-shadow: -10px -13px green;
+                box-shadow: -7px -5px 6px green;
+            }
+            .card h3 {
+                text-shadow: -3px -2px 2px white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="card1" class="card">
+                <h3>Card 1</h3>
+                <p>
+                    Elit ex exercitationem quidem unde quis? Ut labore error laborum unde iure minus accusamus perferendis? Excepturi rerum repellendus voluptate voluptatum debitis? Ex illum repudiandae vero reprehenderit vero Maiores placeat necessitatibus inventore eveniet magni Quaerat!
+                </p>
+                
+            </div>
+            <div id="card2" class="card">
+                <h3>Card 2</h3>
+                <p>
+                    Sit adipisci laborum cumque libero aspernatur delectus hic. Fugiat eligendi nihil alias delectus distinctio? Rem delectus esse fugit eaque incidunt quaerat explicabo similique Magni libero adipisci veniam animi unde Ut distinctio qui magnam fuga
+                </p>
+                
+            </div>
+            <div id="card3" class="card">
+                <h3>Card 3</h3>
+                <p>
+                    Elit libero placeat quaerat repellendus et Iste quas impedit voluptatem ut quam! Illo et aut qui aliquam praesentium earum cupiditate? Recusandae reiciendis nisi quis atque tempora Quis dolor eius dolorem deleniti repellat Et ex.
+                </p>
+                
+            </div>
+        </div>
+    </body>
+</html>
+

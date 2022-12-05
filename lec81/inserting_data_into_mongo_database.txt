@@ -1,0 +1,16 @@
+use harryCart
+
+/* insert query db.collection_name.insert_function(BSON object/ array of BSON object) */
+
+// insertOne -function insert only one BSON object
+
+db.items.insertOne({name: "Samsung 30s", price: 22000, ratimg: 4.5, qty: 233, sold: 98})
+
+// insertMany -function insert an array of BSON object
+
+db.items.insertMany([{name: "Samsung 30s", price: 22000, ratimg: 4.5, qty: 233, sold: 98}, {name: "Samsung 20s", price: 12000, ratimg: 4, qty: 33, sold: 8}, {name: "Samsung 10s", price: 20000, ratimg: 4.9, qty: 23, sold: 18}])
+
+
+/* fetch a collection - function name: find() -> returns all BSON object inside a collection */
+// fetch query db.collection_name.find()
+db.items.find()

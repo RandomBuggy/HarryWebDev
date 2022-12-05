@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Interaction - Alart, Prompt, Confirm</title>
+    </head>
+    <body>
+        <div class="container">
+            <p>This is Simple Markup as HTML, the JAMStack (Javascript-APIs-Markup --> JAM)</p>
+            <script>
+                alert("The is a alert window");
+                let retVal = alert("Second AlertBox");
+                // return undefined - nothing
+                console.log(retVal);
+                prompt("This is a Prompt window", "default Value appear in the input field");
+                let retVal2 = prompt("Enter Your Name");
+                // return inputted text/value as string and default return value is null
+                console.log(retVal2);
+                confirm("This is a confirm window");
+                let retVal3 = confirm("Are You Married?");
+                // return boolean
+                console.log(retVal3);
+
+                // logic with interaction
+                function func(name="blank") {
+                    console.log(`Hi, ${name}`);
+                }
+                alert("Let's Interact");
+                let return_value = confirm("Are you married");
+
+                if (return_value == true) {
+                    let return_value = prompt("Enter Your Name", "Demo Name");
+                    func(return_value);
+                    console.log("Bye");
+                }
+                else {
+                    alert("Get Married!!!");
+                }
+                
+            </script>
+        </div>
+    </body>
+</html>
+

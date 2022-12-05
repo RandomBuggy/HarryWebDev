@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>SetInterval() and setTimeOut()</title>
+    </head>
+    <body>
+        <div class="container">
+            This is a Container
+        </div>
+        <span id="time"></span>
+        <script>
+            console.log("This is tutorial 58");
+            // setTimeOut() --> allows us to run the function once after the interval and returns a number as TimeOut handler
+            // setInterval() --> allows us to run the function repeatedly after the interval and returns a number as IntervalHandler 
+
+            function greet(name) {
+                console.log(`Hello, ${name}! Good Morning`);
+            }
+            setTimeOut(greet, 5000, "Harry"); /* arg1 - function name arg2 - time in miliseconds */
+            let TimeOutHandler = setTimeOut(greet, 5000, "Harry");
+            // clearTimeOut() --> allows to cancel the setTimeOut() with TimeOutHandler
+            clearTimeOut(TimeOutHandler);
+
+            let IntervalHandler = setInterval(greet, 2000, "Harry");
+            // clearInterval() --> allows to cancel the setInterval() with IntervalHandler
+            clearInterval(IntervalHandler);
+
+
+            function displayTime() {
+                time = new Date();
+                console.log(time);
+                document.getElementById("span").innerHTML = time;
+            }
+            setInterval(displayTime, 1000);
+        </script>
+    </body>
+</html>
+

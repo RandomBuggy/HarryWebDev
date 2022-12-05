@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>JS events</title>
+        <style>
+            #btn {
+                padding: 10px 14px;
+                background-color: red;
+                color: white;
+                border: 2px solid black;
+                font-weight: bold;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- events are signal which are received after a action -->
+        <!-- DOM event list : click, contextMenu, mouseover, mouseout, mousedown, mouseup, mousemove, submit, focus, DOMContentLoaded, transitionend etc -->
+        <div class="container">
+            <h1>This is my heading</h1>
+            <p id="paragraph">Dolor officiis ad dicta in reiciendis Obcaecati dolore deleniti deleniti optio neque, et laudantium facere Ad molestiae eos voluptatem impedit suscipit dignissimos? Temporibus quia quaerat dolor repudiandae consequatur obcaecati Blanditiis eos commodi velit non quos! Expedita vero at facilis ea pariatur Corporis et eius sed nemo obcaecati Fugit aliquid quae cum distinctio quasi Minima quas nisi ab obcaecati provident Illo vel fugiat laboriosam magnam voluptatibus. Dicta aut sunt facilis accusamus enim. Voluptates itaque doloremque optio recusandae vero Inventore ex quibusdam assumenda deserunt labore. Neque amet voluptas sunt vero eius. Debitis similique nihil soluta nesciunt porro cupiditate Illum fugit velit inventore ea eum, incidunt harum quaerat Dolorem repudiandae in eaque totam fuga iure Laborum facere magni fuga ipsa molestias quod Labore maiores ipsa deleniti doloremque veritatis! Saepe deleniti voluptates inventore minima inventore aut recusandae reprehenderit quidem Fuga corporis tempora veniam saepe vitae Placeat ad officiis ullam rem minus. Elit explicabo officiis cum beatae eos Sint perspiciatis possimus aliquam quasi repudiandae. Tempora laboriosam molestias ut suscipit explicabo. Nobis natus totam voluptate reprehenderit dignissimos. Harum accusantium nostrum veritatis nemo recusandae Harum aliquam iste ipsa voluptate quidem, molestiae. Dolores numquam voluptatum laboriosam dicta culpa consequuntur. Veniam omnis hic qui a adipisci Quaerat fuga fugiat natus voluptate doloremque magni Eaque doloribus aliquid aliquam eius dolore. Doloribus fugit necessitatibus provident deleniti ipsum? Facilis officia ullam placeat magnam ab. Totam.</p>
+            <button id="btn" onclick="toggle()">Show/Hide</button>
+            <script>
+                let paragraph = document.getElementById("paragraph");
+                // event listener
+                // by default inside DOM object - as id_name, class_name etc has a global variable in modern JS
+                paragraph.addEventListener("mouseover", function warn() { alert("Hey there, Mouse is inside Paragraph"); });
+                function toggle() {
+                    let paragraph = document.getElementById("paragraph");
+                    if (paragraph.style.display != "none") {
+                        paragraph.style.display = "none";
+                    }
+                    else {
+                        paragraph.style.display = "block";
+                    }
+                }
+            </script>
+        </div>
+    </body>
+</html>
+

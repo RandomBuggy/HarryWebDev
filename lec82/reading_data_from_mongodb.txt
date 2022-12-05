@@ -1,0 +1,27 @@
+use harryCart
+
+/* read/fetch all documents */
+db.items.find()
+
+/* read/fetch filtered documents */
+// find function takes a BSON object as a filter to match all the documents inside a collection */
+
+like:-
+db.items.find({rating: 3.5})
+
+some complex filter operators:- $gte(greater than or equal), $lte(less than or equal), $gt(greater than), $lt(less than), ,(and operator), $or(or operator)
+
+db.items.find({rating: 3.5})
+
+db.items.find({rating: {$gte: 3.5}})
+
+// AND query
+db.items.find({rating: {$gte: 3.5}, price: {$lt: 20000}})
+
+// OR query
+db.items.find({$or: [{rating: {$gte: 2.5}}, {price: {$gt: 10000}}]})
+
+/* another argument projection (in RDBMS it is field) */
+
+// projection query -db.collection_name.find(filter BSON, projection BSON)
+db.items.find({$or: [{rating: {$gte: 2.5}}, {price: {$gt: 10000}}]}, {rating: 1})

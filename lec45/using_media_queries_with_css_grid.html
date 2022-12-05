@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>CSS Grid + Media Queries</title>
+        <style>
+            body {
+                background-color: green;
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas: "navbar navbar navbar navbar" "section section section aside" "footer footer footer footer";
+            }
+            @media only screen and (max-width: 300px) {
+                body {
+                    background-color: red;
+                }
+                .container {
+                    grid-template-areas: "navbar navbar navbar navbar" "section section section section" "aside aside aside aside" "footer footer footer footer";
+                }
+                span {
+                    display: block;
+                    text-align: center;
+                }
+                #aside {
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 300px) and (max-width: 500px) {
+                body {
+                    background-color: blue;
+                }
+                .container {
+                    grid-template-areas: "navbar navbar navbar navbar" "section section section section" "aside aside aside aside" "footer footer footer footer";
+                }
+                #aside {
+                    display: none;
+                }
+                span {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            @media only screen and (min-width: 500px) and (max-width: 800px) {
+                body {
+                    background-color: yellow;
+                }
+                .container {
+                    grid-template-areas: "navbar navbar navbar navbar" "section section section section" "aside aside aside aside" "footer footer footer footer";
+                }
+            }
+
+            @media only screen and (min-width: 800px) {
+            }
+                /* media queries are just like if condition in a particular programming language */
+                /* there are different different types of mrdia types in CSS3 with HTML5 */
+            #navbar {
+                grid-area: navbar;
+            }
+            #section {
+                grid-area: section;
+            }
+            #aside {
+                grid-area: aside;
+            }
+            footer {
+                grid-area: footer;
+                text-align: center;
+            }
+            .border-now {
+                border: 2px solid black;
+                padding: 10px 23px;
+                background-color: wheat;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav id="navbar" class="border-now">
+                <span>Home</span>
+                <span>Services</span>
+                <span>About US</span>
+                <span>Contact US</span>
+            </nav>
+            <section id="section" class="border-now">
+                <h2>Learn CSS in Hindi</h2>
+                <p>Dolor cum quod doloribus hic eaque Totam nobis quae maxime iure hic aperiam, accusantium porro Ut aperiam vero est voluptatibus explicabo esse Quaerat quia sapiente cum nulla eaque, repellat laudantium dignissimos ducimus? Quasi voluptatibus quam rerum culpa nam? Harum accusantium consequatur eligendi pariatur veniam a quo Itaque consequatur officia natus provident alias Error dolores in ab libero cumque Placeat minus atque neque odit delectus? Quod nam libero molestiae culpa labore nobis. Odio deserunt magnam omnis corporis architecto! Eveniet facere maxime eum tenetur quos necessitatibus obcaecati. Totam maiores nulla ipsa saepe voluptatem doloremque quis! Quidem ab quos temporibus sunt recusandae? Veniam vero dolorum a maxime est Quidem architecto esse ducimus quidem deleniti asperiores. Necessitatibus odio laborum nostrum voluptas esse? Ut porro esse distinctio?</p>
+            </section>
+            <aside id="aside" class="border-now">
+                <h1>More About US</h1>
+            </aside>
+        </div>
+        <footer class="border-now">Copyright&copy; CodeWithHarry 2022</footer>
+    </body>
+</html>

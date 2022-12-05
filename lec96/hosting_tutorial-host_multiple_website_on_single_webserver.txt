@@ -1,0 +1,5 @@
+concept of Virtual-Host (with apache2)
+
+apache2 specific configuration:-
+    - vim $PREFIX/etc/apache2/extra/httpd-vhosts.conf
+        - inside this file Edit two entry ServerName, DocumentRoot and optional ServerAlias also

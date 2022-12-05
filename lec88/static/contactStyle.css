@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maze&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin: 44px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    min-height: 80vh;
+}
+
+.container h1 {
+    font-family: 'Rubik Maze', cursive;
+    font-size: 34px;
+}
+
+#contact {
+    text-align: center;
+    margin: 12px 0px;
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.myInput {
+    width: 50%;
+    padding: 9px;
+    margin: 8px;
+    font-size: 16px;
+    border: 2px solid #9d8e8e;
+    border-radius: 12px;
+    outline: none;
+}
+
+.btn {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    background: #d43b3b;
+    padding: 8px 16px;
+    margin: 26px;
+    outline: none;
+    cursor: pointer;
+}

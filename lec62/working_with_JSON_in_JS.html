@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Working with JSON</title>
+    </head>
+    <body>
+        <div class="container"></div>
+        <script>
+            // JSON - Java Script Object Notation
+            // JSON is used to store and transfer data, transport Object(key-value pair) over the network
+
+            let JSON_Obj = {
+                name: "Harry",
+                channel: "CWH",
+                friend: "Rohan Das",
+                food: "Bhindi",
+                married: false
+            }
+            console.log(JSON_Obj);
+            // stringify
+            let my_JSON_Str = JSON.stringify(JSON_Obj);
+            console.log(my_JSON_Str);
+
+            my_JSON_Str = my_JSON_Str.replace("Harry", "Larry");
+            console.log(my_JSON_Str);
+
+            // parse
+            let new_JSON_obj = JSON.parse(my_JSON_Str); /* must supply a valid JSON string */
+            console.log(new_JSON_obj);
+        </script>
+    </body>
+</html>
+

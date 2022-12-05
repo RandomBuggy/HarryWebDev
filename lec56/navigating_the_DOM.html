@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Navigating the DOM</title>
+    </head>
+    <body>
+        <div id="main" class="container">
+            <ul id="nav">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Contact US</li>
+                <li>About</li>
+                <li>FAQ</li>
+            </ul>
+        </div>
+        <div class="container">
+            <p>Another Container</p>
+        </div>
+        <script>
+            // the DOM reference is the document object
+            let main = document.getElementById("main");
+            console.log(main);
+            let returned_string_value = document.getElementById('nav').innerHTML;
+            console.log(returned_string_value);
+            let HTML_collections = document.getElementsByClassName("container");
+            console.log(HTML_collections);
+            console.log(HTML_collections[0]);
+            console.log(HTML_collections[1]);
+
+            // manipulating DOM with CSS selectors
+            let Selectors = document.querySelector(".container");
+            console.log("Selectors returned : ", Selectors);
+            let Selector = document.querySelectorAll("#nav>li");
+            console.log(Selector);
+        </script>
+    </body>
+</html>
+

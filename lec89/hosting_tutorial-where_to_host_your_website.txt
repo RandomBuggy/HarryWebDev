@@ -1,0 +1,7 @@
+hosting - 24/7 on computer - as rent - used to serve http protocols files --> *.html, *.css, *.js etc
+
+domain - a unique-name(alphanumeric-name)-based-address
+
+domain-name --> links to --> hosting(rented-computers)-IP-address (by domain provider like hostinger, bigrock, go-daddy etc)
+
+cloud-provider (for hosting) like aws, gcp, azure, linode, digital-ocean, etc

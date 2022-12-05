@@ -1,0 +1,25 @@
+MongoDB
+    - No SQL
+    - document oriented
+    - written in c++
+    - started development 2007
+
+MongoDB stores data as documents as BSON file
+as DBMS perspective,
+    - Database = Database
+    - Tables = Collections
+    - Rows = Documents
+
+for linux and mac,
+    - mongod is the daemon server
+    - mongo is the command-line shell
+    - if no host:port is mentioned by default is localhost:27017
+    - if wrong host:port combination is supplied then mongo client-shellfailed
+
+
+inside mongo shell, 
+    -> db points to current selected database
+    -> show dbs/collections
+    -> use db_name (if not exist then also create and select that for later use)
+    -> db.collection_name (show/create(new) collection)
+    -> db.collection_name.insert(BSON); insert a BSON (most close syntax to JSON) value/document

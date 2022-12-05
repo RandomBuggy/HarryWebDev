@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Arrow Function</title>
+    </head>
+    <body>
+        <div class="container">
+            This is a container
+        </div>
+        <script>
+            // arrow function is a shortcut
+            function greet(text="Hi") {
+                console.log(`${text}, Good Morning!`);
+            }
+            greet();
+            let greet2 = (text="Hi") => {console.log(`${text} Good Morning`);}
+            greet2();
+            // arrow syntax:- function_name = (param) => {implementation code;}
+            let sum = (a, b) => {
+                return a+b;
+            }
+            let sum2 = (a, b) => a+b;
+            let half = a => a / 2;
+            setTimeout(() => {console.log("We are inside setTimeout()!");}, 3000);
+            
+
+            // arrow function inside object
+            // laxical this :- inside arrow-function this keyword refers to the parent but inside a just-function this keyword refers the current object block
+            let obj = {
+                students : ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+                speak() {
+                    this.students.forEach((student) => {console.log(`Kukdoo Ku ${student}`);})
+                }
+            }
+            obj.speak();
+        </script>
+    </body>
+</html>
+

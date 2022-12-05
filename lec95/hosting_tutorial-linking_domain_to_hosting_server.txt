@@ -1,0 +1,1 @@
+use domain provider hosting service or link server with A record

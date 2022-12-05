@@ -1,0 +1,3 @@
+ufw 
+ufw status
+ufw app list
